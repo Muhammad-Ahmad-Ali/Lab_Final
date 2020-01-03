@@ -13,7 +13,7 @@ private static Calculator calculator;
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		System.out.println("before class");
+		System.out.println("Before class");
 		calculator = new Calculator();
 	}
 	
@@ -29,7 +29,7 @@ private static Calculator calculator;
 	
 	@Test  
 	public void testFindMax2(){  
-		assertEquals(-1,calculator.findMax(-120,-1,-200));  
+		assertEquals(0,calculator.findMax(-120,0,-200));  
 	}
 	
 	@Test  
@@ -64,7 +64,7 @@ private static Calculator calculator;
 	
 	@AfterClass
     public static void tearDownAfterClass() throws Exception {  
-        System.out.println("after class");  
+        System.out.println("After class");  
     }
 
 }
